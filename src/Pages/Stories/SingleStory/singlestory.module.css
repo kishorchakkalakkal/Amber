@@ -1,0 +1,121 @@
+.worksWrap {
+    padding: 2rem 5vw ;
+}
+
+.pageHeader {
+    margin: 0 0 0;
+}
+
+.siteLogo .st0{fill:var(--secondaryColor)}
+.siteLogo .st1{fill:#EF4623;}
+
+.pageHeader .jumpToSection {
+    position: absolute;
+    top: 0.5rem;
+    left: calc( 50% - 5rem );
+    transform: translateX( -5vw );
+    display: flex;
+    gap: 7vw;
+}
+
+.pageHeader .jumpToSection h6,
+.pageHeader .jumpToSection li {
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.pageHeader .jumpToSection ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.pageHeader .jumpToSection li {
+    cursor: pointer;
+}
+
+.pageHeader .jumpToSection h6 {
+    opacity: 0.5;
+}
+
+.storyMeta {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+    display: inline-flex;
+    gap: 5rem;
+}
+
+.storyMeta h6 {
+    font-size: 0.8rem;
+    line-height: 1;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-bottom: 0.4rem !important;
+}
+
+.storyMeta h5 {
+    font-size: 0.8rem !important;
+    line-height: 1;
+    font-weight: 400 !important;
+    margin-bottom: 0 !important;
+}
+
+.storyHeader {
+    font-size: 5rem !important;
+    margin-block: 10rem 2rem !important;
+    line-height: 1 !important;
+    max-width: 1300px;
+}
+
+.storyContent {
+    padding: 5rem 5vw;
+}
+
+.storyContent_inner {
+    padding-left: 30%;
+}
+
+.storyContent_inner h6 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 1.5rem;
+}
+
+.storyContent_inner h6 svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.storyContent_intro {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin: 0 0 5rem;
+}
+
+.storyContent_indent {
+    padding-left: 25%;
+}
+
+.storyContent_inner p {
+    font-size: 1.1rem;
+    margin-bottom: 5rem;
+}
+
+.storyContent_inner p.storyContent_caption {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.storyContent_subHead {
+    margin: 5rem 0 1.5rem;
+    font-weight: 500 !important;
+}

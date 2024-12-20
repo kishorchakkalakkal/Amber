@@ -1,0 +1,126 @@
+.serviceWrap {
+    padding: 2rem 6vw 5rem;
+    background: #f8f6f5;
+}
+
+.titleSection {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.titleSection h5 {
+    padding-left: 35.32934%;
+}
+
+.serviceSection {
+    padding: 0rem 6vw 0;
+    background: white;
+}
+
+.serviceSection.firstChild {
+    margin-top: 6rem;
+}
+
+.serviceSection .imgLeft {
+    top: 0;
+    position: absolute;
+    transform: translateY(-10%) translateX( 6vw );
+    width: 20%;
+    left: 0;
+}
+
+.serviceSection .imgLeft > div {
+    transform-origin: center top;
+    transform: scale(1.75);
+}
+
+.servicesWorkList {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.workData {
+    padding-block: 0.75rem 2rem;
+}
+
+.workData h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+}
+
+.taglist {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    display: flex;
+    flex-wrap: nowrap;
+    text-transform: capitalize;
+    gap: 1.5rem;
+}
+
+.awardsWrap {
+    padding-block: 4rem 6rem;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding-left: 35.32934%;
+}
+
+.awardsItem {
+    border-top: 1px solid #ccc;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+
+.awardsItem h5 {
+    font-size: 1.2rem;
+}
+
+.awardsItem h4 {
+    font-size: 3rem;
+}
+
+.serviceSectionTitle {
+    font-size: 2.5rem !important;
+    margin-block: 1rem 2rem !important;
+}
+
+.worklist {
+    padding-left: calc( 35.32934% - 6vw );
+    transform: translateX( 6vw );
+}
+
+@media( max-width: 991px ) {
+
+    .serviceSection .imgLeft > div {
+        transform-origin: right top;
+        transform: scale(2.75) translateX(25%);
+    }
+    
+}
+
+@media( max-width: 700px ) {
+    .servicesWorkList > span,
+    .awardsWrap {
+        padding-left: 0;
+    }
+    .ProjectsListByCat {
+        padding-left: 0;
+    }
+    .worklist {
+        padding-left: 0;
+        transform: translateX( 0 );
+    }
+    .serviceSection .imgLeft {
+        top: 0;
+        position: static;
+        transform: translateY(-10%) translateX( 6vw );
+        width: 80%;
+        left: 0;
+    }
+    .serviceSection .imgLeft > div {
+        transform: none;
+    }
+    
+}

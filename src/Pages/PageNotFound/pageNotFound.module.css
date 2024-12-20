@@ -1,0 +1,38 @@
+.serviceWrap {
+    padding: 2rem 6vw 5rem;
+    background: white;
+}
+
+.pnf_content img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.pnf_content h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.pnf_content h4 {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.backBtn {
+    background: transparent;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 0.5rem;
+    outline: none !important;
+    box-shadow: none !important;
+    color: var(--secondaryColor);
+    padding: 0.75em 2em;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.backBtn:hover,
+.backBtn:focus {
+    color: white;
+    background: var(--secondaryColor);
+}

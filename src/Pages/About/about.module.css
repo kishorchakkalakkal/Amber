@@ -1,0 +1,114 @@
+.aboutWrap {
+    padding: 2rem 6vw 5rem;
+    background: #f8f6f5;
+}
+
+.aboutWrap h5,
+.contactWrap {
+    padding-left: 35.32934%;
+}
+
+.aboutSection,
+.honorWrap .honorTabs {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.contactSection {
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.contactSection .imgLeft {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%) translateX( -5vw );
+    left: 0;
+    width: 35.32934%;
+}
+
+.contactSection a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+.contactWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contactWrap_item h4 {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.contactWrap_item h6 {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.contactWrap_item p {
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+.contactWrap_item span {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    display: inline-block;
+    padding-block: 0.75rem;
+    transform: translateY(-0.5rem);
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.contactWrap_item .contactWrap_address:hover span {
+    opacity: 0.75;
+    transform: translateY(0);
+}
+
+.honorWrap {
+    padding: 5rem 5vw;
+}
+
+.honorTabs {
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.honorTabs_col {
+    width: calc( ( 100% - 11vw ) / 3 );
+}
+
+.teamWrap {
+    padding: 5rem 6vw;
+}
+
+.memberWrap {
+    margin-bottom: 5rem;
+}
+
+.memberWrap h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.memberWrap p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+.siteLogo .st0{fill:var(--secondaryColor)}
+.siteLogo .st1{fill:#EF4623;}
+
+@media( max-width: 700px ) {
+    .memberWrap h3 {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+    }
+    
+}

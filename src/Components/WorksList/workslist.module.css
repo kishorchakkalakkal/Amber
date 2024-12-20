@@ -1,0 +1,131 @@
+.ProjectsList, .ProjectsListByCat {
+    width: 100%;
+    margin: auto;
+    padding: 8rem 6vw 0;
+    position: relative;
+    z-index: 2;
+}
+
+.ProjectsListByCat {
+    margin-left: -6vw;
+    margin-top: -8rem;
+    width: calc(100% + 6vw);
+}
+/*
+.ProjectsList .workWrap {
+    background-color: #fff;
+    padding-bottom: 5rem;
+    opacity: 0.15;
+    filter: grayscale(1) blur(5px);
+    transition: opacity 0.5s ease-in-out, filter 0.3s ease-in-out;
+}
+*/
+.ProjectsList .workWrap {
+    background-color: #fff;
+    padding-bottom: 5rem;
+}
+
+.ProjectsListByCat .workWrap {
+    background-color: #fff;
+    padding-bottom: 3rem;
+}
+/*
+.ProjectsList.loaded .workWrap {
+    opacity: 1;
+    filter: grayscale(0) blur(0px);
+}
+*/
+.workData {
+    padding-block: 1rem 2rem;
+}
+
+.workWrap a {
+    color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+.workData h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+.workData h4::before {
+    position: absolute;
+    content: "";
+    left: -1rem;
+    top: 50%;
+    width: 0.35rem;
+    height: 0.35rem;
+    background: var(--secondaryColor);
+    border-radius: 50%;
+    transform: translateY(-50%) scale(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.workWrap:hover .workData h4::before {
+    transform: translateY(-50%) scale(1);
+}
+
+.taglist {
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    text-transform: capitalize;
+    gap: 1.5rem;
+}
+
+.taglist li {
+    cursor: pointer;
+    opacity: 0.5;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+/*
+.taglist li:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+*/
+.worksCanvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transform: scale(1);
+    pointer-events: none;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+@media( max-width: 1240px ) {
+    .worksCanvas {
+        opacity: 0 !important;
+    }
+}
+
+@media( max-width: 700px ) {
+    .ProjectsList {
+        padding: 5rem 6vw 3rem;
+    }
+    .ProjectsList .workWrap {
+        width: 100%;
+    }
+    .workData h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .taglist {
+        font-size: 0.65rem;
+    }
+    .ProjectsListByCat {
+        padding-left: 0;
+    }
+    .ProjectsList .workWrap {
+        padding-bottom: 1.5rem;
+    }
+}

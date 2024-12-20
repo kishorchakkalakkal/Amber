@@ -1,0 +1,53 @@
+.elementor > .e-con {
+    max-width: 100% !important;
+}
+
+.elementor > .e-con-boxed {
+    padding-inline: 6vw !important;
+}
+
+.elementor > .e-con > .e-con-inner .e-con-inner {
+    margin-inline: 0 !important;
+}
+
+#workBanner_image.elementor-element {
+    min-height: calc( 100vh - 4.75rem ) !important;
+}
+
+.elementor-element h1,
+.elementor-element h2,
+.elementor-element h3,
+.elementor-element h4,
+.elementor-element h5,
+.elementor-element h6,
+.elementor-element p {
+    margin: 0 !important;
+}
+
+.elementor > .e-con-boxed > .e-con-inner {
+    max-width: 1550px !important;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.elementor-custom-embed-image-overlay {
+    position: absolute !important;
+    inset: 0 !important; 
+    background-size: cover !important;
+    background-position: center center !important;
+    opacity: 1;
+}
+
+.elementor-custom-embed-image-overlay:hover {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.elementor video {
+    display: block;
+}
+
+.elementor h3 {
+    font-weight: 600;
+}

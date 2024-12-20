@@ -1,0 +1,80 @@
+.honorTabsItem {
+    cursor: pointer;
+    margin-bottom: 5vw;
+}
+
+.honorTabsItem .honorTabHeader {
+    border-top: 1px solid #ddd;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.honorTabsItem:hover .honorTabHeader {
+    border-color: var(--secondaryColor);
+}
+
+.honorTabsItem .honorTabHeader h6 {
+    margin: 0;
+    color: var(--secondaryColor);
+    opacity: 0.35;
+    font-size: 0.75rem;
+    padding-block: 1em;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.honorTabsItem:hover .honorTabHeader h6 {
+    opacity: 1;
+}
+
+.honorTabsItem .honorTabHeader::after,
+.honorTabsItem .honorTabHeader::before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 2px;
+    border-radius: 2px;
+    content: '';
+    background: #ccc;
+    transform-origin: center center;
+}
+
+.honorTabsItem .honorTabHeader::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.honorTabsItem .honorTabImage svg,
+.honorTabsItem .honorTabImage img {
+    width: 100%;
+    opacity: 1;
+}
+
+.honorTabsItem .honorTabImage img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.honorTabImage {
+    height: 0;
+    overflow: hidden;
+}
+
+.honorTabsItem .honorTabTitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.honorTabsItem .honorTabPara {
+    font-size: 0.75rem;
+    font-weight: 400;
+    height: 0;
+    overflow: hidden;
+}
+
+.honorTabsItem .honorTabPara p {
+    opacity: 0;
+    transform: translateX(-15%);
+}
